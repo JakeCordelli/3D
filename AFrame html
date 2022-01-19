@@ -1,0 +1,28 @@
+<html lang="en">
+ <head>
+  <title>AFrame Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/feiss/aframe-environment-component/ad57b15d/dist/aframe-environment-component.min.js"></script>
+ </head>
+ <body>
+<a-scene>
+    
+    <a-assets>
+      <a-asset-item id="mtl" src="https://cdn.glitch.com/ba61b450-da33-42ca-b5e9-86ea4c3cc0fe%2Fmaterials.mtl?1509648005013"></a-asset-item>
+      <a-asset-item id="obj" src="https://raw.githubusercontent.com/JakeCordelli/3D/main/snowman2smoother.obj"></a-asset-item>
+    </a-assets>
+    
+    <a-entity obj-model="obj: #obj; mtl: #mtl;" shadow="receive: false;" rotation="0 360 0" position="0 5 0" scale="1 1 1">
+    
+      
+      <a-animation attribute="rotation" from="0 180 0" to="0 -180 0" dur="50000" repeat="indefinite"></a-animation>
+    </a-entity>
+    
+    
+    
+  <a-entity environment="shadow: true; shadowSize: 10; preset:default;" ></a-entity>
+ </a-scene>
+</body>
+</html>

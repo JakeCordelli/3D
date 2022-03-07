@@ -1,0 +1,12 @@
+# Blender MTL File: '3D Sheet.blend'
+# Material Count: 1
+
+newmtl Material
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.844885 0.844885 0.844885
+Ke 0.200000 0.200000 0.200000
+Ni 1.000000
+d 0.196078
+illum 2
